@@ -5,9 +5,125 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(255, 227, 231);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.header{
+  display: flex;
+  background-color: white;
+  align-items: center;
+  padding: 5px 40px;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+.header-text{
+  padding-left: 10%;
+  color: black;
+}
+.header-logo{
+  width:200px;
+  height: auto;
+}
+main{
+  padding: 20px;
+}
+.form{
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap:17px
+}
+.form-input{
+  font-family: "Karla", sans-serif;
+  border-radius: 5px;
+  border: 1px solid;
+  text-indent: 5px;
+}
+.form-button{
+  grid-column: 1/-1; 
+  border-radius: 5px;
+  font-family: "Karla", sans-serif;
+  background-color: rgb(99, 99, 99);
+  color:white;
+  font-weight: bold;
+  border: 1px solid;
+}
+
+.results{
+  position: relative;
+  text-align: center;
+}
+
+.history{
+  text-align: center;
+}
+
+
+.image-text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-size: 2em;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
+}
+
+.big-image{
+  width:600px;
+  height:300px;
+  margin-top: 10px;
+}
+.match-container{
+  display: flex;
+  padding: 10px;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.5);
+  background-color: white;
+}
+.match-text{
+  padding-left: 10px;
+}
+.match-name{
+  font-size: large;
+  font-weight: bold;
+}
+.match-header{
+  display: flex;
+  align-items: center;
+}
+.match-compatibility{
+  padding-left: 2px;
+  font-size: large;
+}
+.match-description{
+  font-size: large;
+  font-weight: bold;
+}
+.match-image{
+  width: 300px;
+  height: 200px;
 }
